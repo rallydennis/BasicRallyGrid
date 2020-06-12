@@ -33,8 +33,5 @@ Ext.define('CustomApp', {
         });
       
         this.add(myGrid);
-        console.log('this is ', this);
-    }
-
-        
+    }   
 });
