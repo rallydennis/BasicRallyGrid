@@ -2,8 +2,6 @@ Ext.define('CustomApp', {
     extend: 'Rally.app.App',
     componentCls: 'app',
     launch: function() {
-        console.log('first app');
-         
         this._loadData();
     },
 
@@ -13,7 +11,6 @@ Ext.define('CustomApp', {
             autoLoad: true,
             listeners: {
                 load: function(store, data, success) {
-                    console.log('got data', store, data, success);  
                     this._loadGrid(store)
                 },
             scope: this
